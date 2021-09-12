@@ -1,0 +1,193 @@
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* CSS resets */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--pale-blue);
+    color: var(--desaturated-blue);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Typography */
+
+h2 {
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: -15px;
+}
+
+h2,
+h4 {
+    color: #000;
+    font-weight: 900;
+}
+
+/* Containers */
+
+.card-container {
+    /* max-width: 275px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
+    padding: 1em 0.3em;
+}
+
+/* Main */
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-text {
+    max-width: 275px;
+    line-height: 1.7;
+}
+
+/* Subscription */
+
+.subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--very-pale-blue);
+    opacity: 0.7;
+    border-radius: 10px;
+    margin: 0.2em 0 1.5em;
+    padding: 0.5em 1em;
+    min-width: 85%;
+}
+
+.music-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.annual-subscription {
+    padding-top: 0.8em;
+}
+
+.change-subscription {
+    font-weight: bold;
+    padding: 0 0 0 1.5em;
+}
+
+.change-subscription a {
+    color: var(--bright-blue);
+}
+
+.change-subscription:hover,
+.change-subscription:focus {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+/* Payment actions (button/cancel order) */
+
+.payment-btn {
+    background: var(--bright-blue);
+    color: var(--very-pale-blue);
+    border: 0;
+    font-family: inherit;
+    font-weight: 900;
+    padding: 1.2em 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 85%;
+}
+
+.payment-btn:hover,
+.payment-btn:focus {
+    opacity: 0.7;
+}
+
+.cancel-order {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cancel-order:hover {
+    color: #000;
+}
+
+/* Front End Mentor provided css */
+
+.attribution { 
+    display: none;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Media queries */
+
+@media (max-width: 350px) {
+    .subscription {
+        flex-direction: column;
+    }
+
+    .change-subscription {
+        padding: 0;
+    }
+}
+
+@media (min-width: 400px) {
+    main {
+        background: no-repeat url("/images/pattern-background-desktop.svg");
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        background: repeat-x url("/images/pattern-background-desktop.svg");
+    }
+}
