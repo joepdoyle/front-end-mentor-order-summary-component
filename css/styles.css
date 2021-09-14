@@ -182,12 +182,20 @@ main {
 
 @media (min-width: 400px) {
     main {
+<<<<<<< HEAD
         background: no-repeat url("./images/pattern-background-desktop.svg");
+=======
+        background: no-repeat url("../images/pattern-background-desktop.svg");
+>>>>>>> 3b3fc6b067537497e953f91528550419024f6697
     }
 }
 
 @media (min-width: 1440px) {
     main {
+<<<<<<< HEAD
         background: repeat-x url("./images/pattern-background-desktop.svg");
+=======
+        background: repeat-x url("../images/pattern-background-desktop.svg");
+>>>>>>> 3b3fc6b067537497e953f91528550419024f6697
     }
 }
